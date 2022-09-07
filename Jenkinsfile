@@ -3,19 +3,19 @@ pipeline {
   stages {
     stage ('Build') {
       steps {
-      sh 'echo "HELLO WORLD"'
+      sh 'echo "HELLO WALTER"'
       sh '''
-        echo "This will list current dir content from latest"
-        ls -lh
+        echo "Welcome to B2"
+        uname -a
         '''
       }
     }
     stage ('Test') {
       steps {
-      sh 'echo "HELLO TEST"'
+      sh 'echo "HELLO TEST USER"'
       sh '''
-        echo "This list current dir"
-        pwd
+        echo "This IS A TEST OF THE REPO"
+        ps
         '''
       }
     }
