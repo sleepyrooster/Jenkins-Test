@@ -7,6 +7,7 @@ pipeline {
       sh '''
         echo "Welcome to B2"
         uname -a
+        echo $UID
         '''
       }
     }
